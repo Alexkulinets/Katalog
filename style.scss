@@ -1,0 +1,291 @@
+
+    @import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700&display=swap);
+    $body-bg:#BAF2FE;
+    $di:flex;
+    $element:#F8F8F8;
+    $rotate:rotate(265deg);
+    $font: 'Comfortaa', display;
+    $name:#313131;
+    $b:#AD1313;
+    $s:#FF5A5A;
+    $line:#cafbff;
+    $left:6px;
+    body{
+        background:  $body-bg;
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        display: $di;
+        justify-content: center;
+    }
+
+    section{
+        width:1214px;
+        height:745px;
+        z-index: 3;
+        overflow: hidden;
+    }
+
+    .container{
+        display: $di;
+        align-items:center;
+        justify-content: flex-start;
+        width:100%;
+        height:147.5%;
+        background: white;
+        transform: rotate(95deg);
+    }
+    h1{
+        position: absolute;
+        margin-left:-50px;
+        transform: $rotate;
+        font-family: $font;
+        font-weight:700;
+        font-size:24px;
+    }
+    a{
+        color:$b;
+    }
+    b{
+        color:$s;
+    }
+
+    .liner{  
+        position: relative;
+        width:950px;
+        height: 410px;
+        margin-left:5px;
+        transform: $rotate;
+        display: $di;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-family: $font;
+    }
+
+    .elements{
+        background: $element;
+        width:210px;
+        height:315px;
+        border-radius:20px;
+        box-shadow: rgb(169, 169, 169) 2.5px 5px 5px;
+    }
+
+
+    h1 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .slider {
+        width:852.25px;
+        height: 410px;
+        margin:20px auto;
+        overflow: hidden;
+    }
+
+    .slider-line {
+        width:862.25px;
+        height: 256px;
+        display: $di;
+        gap:19.25px;
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
+    }
+    .elements {
+        background: $element;
+        width:210px;
+        height:315px;
+        border-radius:20px;
+        box-shadow: rgb(169, 169, 169) 2.5px 5px 5px;
+    }
+    .oveflow{
+        width:195px;
+        height:215px;
+        overflow: hidden;
+        margin-top:2.5px;
+    }
+    .img{
+        margin-top:2.5px;
+        width:200px;
+        height:220px;
+        transition: 0.75s;
+        border-radius: 20px;
+    }
+    .img:hover{
+        transform: 0.75s;
+        transform: scale(1.15);
+        border-radius: 75px;
+    }
+    .name{
+        font-family: $font;
+        font-size:14.5px;
+        font-weight:400;
+        margin-left:$left;
+        color:$name;
+    }
+    .buy{
+        margin-top:5px;
+        margin-left:$left;
+    }
+
+    .korzina{
+        position: absolute;
+        margin-left:69.5px;
+        margin-top:-35px;
+        width:120px;
+        height:40px;
+        border-radius:10px;
+        background: #000;
+        text-align: center;
+        font-family: $font;
+        font-weight:700;
+        font-size:11.5px;
+        color:$element;
+        border:white 3.5px solid;
+        transition: 0.25s;
+    }
+
+    .korzina:hover{
+        background: #2d2d2d;
+        width:120px;
+        height:41.75px;
+        margin-left:70px;
+        transform: 0.25s;
+    }
+
+    .korzina:active{
+        background: $body-bg;
+        color:#000;
+        margin-left:70.5px;
+    }
+    .buttons{
+        margin-left:-142.5px;
+        width:1214px;
+        display: $di;
+        gap:1025px;
+        position: absolute;
+        align-self:center;
+        justify-content: space-around;
+        z-index: 5;
+    }
+
+    .slider-prev{
+        width:60px;
+        height:60px;
+        border-radius:60px;
+        background: $element;
+        text-align: center;
+        font-family: $font;
+        font-weight:700;
+        font-size:11.5px;
+        color:$element;
+        border:white 3.5px solid;
+        transition: 0.25s;
+        text-align: center;
+    }
+    .slider-prev:hover{
+        background: $line;
+        width:60px;
+        height:60px;
+        transform: 0.25s;
+    }
+    .slider-prev:active{
+        background: $body-bg;
+        color:#000;
+    }
+
+    .slider-next{
+        width:60px;
+        height:60px;
+        border-radius:60px;
+        background: $element;
+        text-align: center;
+        font-family: $font;
+        font-weight:700;
+        font-size:11.5px;
+        color:$element;
+        border:white 3.5px solid;
+        transition: 0.25s;
+        text-align: center;
+    }
+
+    .slider-next:hover{
+        background: $line;
+        width:60px;
+        height:60px;
+        transform: 0.25s;
+
+    }
+
+    .slider-next:active{
+        background: $body-bg;
+        color:#000;
+    }
+    .line{
+        width:40px;
+        height:40px;
+        margin-right:-7.5px;
+    }
+    .line.two{
+        margin-left:-7.5px;
+    }
+    .rentangle-container{
+        position: absolute ;
+        width:100%;
+        height:100%;
+        display: $di;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: -1;
+    }
+
+    .rectangle{
+        position: absolute;
+        width:75px;
+        height:75px;
+        z-index: 5;
+    }
+
+    .rectangle:nth-child(4), .rectangle:nth-child(5), .rectangle:nth-child(6){
+        align-self: flex-end;
+    }
+
+    .rectangle:nth-child(1){
+        margin-top:355px;
+        margin-left:77.25px;
+        width:275px;
+        height:275px;
+    }
+    .rectangle:nth-child(2){
+        position: absolute;
+        height: 100px;
+        margin-left:57.5px;
+        margin-top:50px;
+        width:100px;
+    }
+    .rectangle:nth-child(3){
+        margin-top: -180px;
+        margin-left:67.25px;
+        height: 250px;
+        width:250px;
+    }
+    .rectangle:nth-child(4){
+        margin-top: -180px;
+        margin-right:87.25px;
+        height: 250px;
+        width:250px;
+    }
+    .rectangle:nth-child(5){
+        position: absolute;
+        height: 100px;
+        margin-right:77.5px;
+        margin-top:50px;
+        width:100px;
+    }
+    .rectangle:nth-child(6){
+        margin-top:355px;
+        margin-right:97.25px;
+        width:275px;
+        height:275px;
+    }
